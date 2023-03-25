@@ -9,6 +9,14 @@ export default class MyDocument extends Document {
     return (
       <Html lang="ko">
         <Head>
+        <meta
+              name='google-site-verification'
+              content='Zd8IhHjBYgO5M3l0oOViRYwa8OXdg2aLSOjUTIwe7yw'
+            />
+            <meta
+              name='naver-site-verification'
+              content='a50a08504e695cb943751e7ba6409a62103efc5c'
+            />   
           <link rel="shortcut icon" href="/favicon.ico" />
           <link rel="icon" type="image/png" sizes="128x128" href="favicon.png" />
 

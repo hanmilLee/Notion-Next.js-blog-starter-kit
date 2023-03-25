@@ -6,6 +6,7 @@ import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin';
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText';
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube';
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline';
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp';
 
 import { useDarkMode } from 'lib/use-dark-mode';
@@ -98,6 +99,17 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
 
+        {config.instagram && (
+          <a
+            className={styles.instagram}
+            href={`https://www.instagram.com/${config.instagram}`}
+            title={`instagram ${config.author}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaInstagram />
+          </a>
+        )}
         {config.newsletter && (
           <a
             className={styles.newsletter}

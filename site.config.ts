@@ -58,10 +58,10 @@ export default siteConfig({
       title: 'About me',
       pageId: 'a32a59aec23c41e08452757e94d96418'
     },
-    // {
-    //   title: '카테고리',
-    //   pageId: '36400db511474331b5c1de6918212469',
-    // },
+    {
+      title: '카테고리',
+      pageId: 'd80818b72861426fad44a74b1c37d041',
+    },
   ],
 
   // -------- custom configs (2skydev) -------------

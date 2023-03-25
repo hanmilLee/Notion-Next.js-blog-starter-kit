@@ -58,10 +58,10 @@ export default siteConfig({
       title: 'About me',
       pageId: 'a32a59aec23c41e08452757e94d96418'
     },
-    {
-      title: 'Category',
-      pageId: 'd80818b72861426fad44a74b1c37d041',
-    },
+    // {
+    //   title: 'Category',
+    //   pageId: 'd80818b72861426fad44a74b1c37d041',
+    // },
   ],
 
   // -------- custom configs (2skydev) -------------
@@ -70,7 +70,7 @@ export default siteConfig({
   dateformat: 'yyyy년 MM월 dd일',
 
   // post page - hidden properties
-  hiddenPostProperties: ['설명', '상태', '최하위 정렬'],
+  hiddenPostProperties: [ '상태', '최하위 정렬'],
 
   // contentPosition (table of contents) text align
   contentPositionTextAlign: 'left',

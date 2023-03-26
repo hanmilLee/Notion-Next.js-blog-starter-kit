@@ -190,7 +190,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     [block, recordMap, isBlogPost],
   );
 
-  // const footer = React.useMemo(() => <Footer />, []);
+  const footer = React.useMemo(() => <Footer />, []);
 
   if (router.isFallback) {
     return null;
@@ -264,7 +264,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
             )
           ) : null
         }
-        footer={null}
+        footer={footer}
       />
     </>
   );

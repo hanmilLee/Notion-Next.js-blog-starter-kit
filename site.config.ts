@@ -66,6 +66,9 @@ export default siteConfig({
 
   // -------- custom configs (2skydev) -------------
 
+  // Utteranc.es comments via GitHub issue comments (optional)
+  utterancesGitHubRepo: 'hanmilLee/nextjs-notion-starter-kit',
+ 
   // date-fns format string
   dateformat: 'yyyy년 MM월 dd일',
 

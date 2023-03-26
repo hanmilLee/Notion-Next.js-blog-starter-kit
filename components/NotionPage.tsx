@@ -26,6 +26,7 @@ import Comments from './Comments';
 import { Loading } from './Loading';
 import { Footer } from './Footer';
 import { NotionPageHeader, ToggleThemeButton } from './NotionPageHeader';
+import { ReactUtterances } from './ReactUtterances'
 import { Page404 } from './Page404';
 import { PageAside } from './PageAside';
 import { PageHead } from './PageHead';
@@ -225,6 +226,54 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const hasCollectionView = Object.keys(recordMap.collection_query).length;
 
+  if (isBlogPost) {
+    if (config.utterancesGitHubRepo) {
+      comments = (
+        <ReactUtterances
+          repo={config.utterancesGitHubRepo}
+          issueMap='issue-term'
+          issueTerm='title'
+          theme={isDarkMode ? 'photon-dark' : 'github-light'}
+        />
+      )
+      // } else if (config.cusdis) {
+      //   if (!config.cusdis.appId) {
+      //     console.warn('[cusdis]', 'appId is required')
+      //   }
+      //   comments = darkMode.value ? (
+      //     <ReactCusdis
+      //       style={{
+      //         width: '100%',
+      //         marginTop: '30px'
+      //       }}
+      //       attrs={{
+      //         host: config.cusdis.host || 'https://cusdis.com',
+      //         appId: config.cusdis.appId,
+      //         pageId: pageId,
+      //         pageTitle: title,
+      //         pageUrl: canonicalPageUrl,
+      //         theme: 'dark'
+      //       }}
+      //     ></ReactCusdis>
+      //   ) : (
+      //     <ReactCusdis
+      //       style={{
+      //         width: '100%',
+      //         marginTop: '30px'
+      //       }}
+      //       attrs={{
+      //         host: config.cusdis.host || 'https://cusdis.com',
+      //         appId: config.cusdis.appId,
+      //         pageId: pageId,
+      //         pageTitle: title,
+      //         pageUrl: canonicalPageUrl,
+      //         theme: 'light'
+      //       }}
+      //     ></ReactCusdis>
+      //   )
+    }
+  }
+
   return (
     <>
       <PageHead
@@ -255,15 +304,16 @@ export const NotionPage: React.FC<types.PageProps> = ({
         defaultPageCoverPosition={config.defaultPageCoverPosition}
         mapPageUrl={siteMapPageUrl}
         mapImageUrl={mapImageUrl}
+        pageFooter={comments}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
-        pageFooter={
-          config.enableComment ? (
-            !isBlogPost ? null : (
-              <Comments pageId={pageId} recordMap={recordMap} />
-            )
-          ) : null
-        }
+        // pageFooter={
+        //   config.enableComment ? (
+        //     !isBlogPost ? null : (
+        //       <Comments pageId={pageId} recordMap={recordMap} />
+        //     )
+        //   ) : null
+        // }
         footer={footer}
       />
     </>

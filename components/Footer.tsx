@@ -50,8 +50,8 @@ export const FooterImpl: React.FC = () => {
           <div>Copyright 2023 {config.author} </div>
         </div>
       </div>
-      
-      <div className={styles.settings}>
+
+      {/* <div className={styles.settings}>
         {hasMounted && (
           <a
             className={styles.toggleDarkMode}
@@ -63,7 +63,7 @@ export const FooterImpl: React.FC = () => {
             {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
           </a>
         )}
-      </div>
+      </div> */}
 
       <div className={styles.social}>
         {config.twitter && (

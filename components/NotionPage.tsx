@@ -24,7 +24,7 @@ import { getBlockTitle, getPageProperty, formatDate } from 'notion-utils';
 import Comments from './Comments';
 // components
 import { Loading } from './Loading';
-// import { Footer } from './Footer';
+import { Footer } from './Footer';
 import { NotionPageHeader, ToggleThemeButton } from './NotionPageHeader';
 import { Page404 } from './Page404';
 import { PageAside } from './PageAside';

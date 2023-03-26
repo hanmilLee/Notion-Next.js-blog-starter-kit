@@ -30,6 +30,7 @@ export interface SiteConfig {
 
   utterancesGitHubRepo?: string;
   GiscusGitHubRepo?: string;
+
   includeNotionIdInUrls?: boolean;
   pageUrlOverrides?: types.PageUrlOverridesMap;
   pageUrlAdditions?: types.PageUrlOverridesMap;

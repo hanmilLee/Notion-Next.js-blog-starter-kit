@@ -234,7 +234,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
       comments = (
         <Giscus
           id="comments"
-          repo={config.GiscusGitHubRepo}
+          repo="hanmilLee/Notion-Next.js-blog-starter-kit"
           repoId="R_kgDOJOLATQ"
           category="comment"
           categoryId="DIC_kwDOJOLATc4CVJ0H"

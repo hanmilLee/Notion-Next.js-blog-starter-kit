@@ -26,7 +26,8 @@ import Comments from './Comments';
 import { Loading } from './Loading';
 import { Footer } from './Footer';
 import { NotionPageHeader, ToggleThemeButton } from './NotionPageHeader';
-import { ReactUtterances } from './ReactUtterances'
+// import { ReactUtterances } from './ReactUtterances'
+import Giscus from '@giscus/react';
 import { Page404 } from './Page404';
 import { PageAside } from './PageAside';
 import { PageHead } from './PageHead';
@@ -233,12 +234,27 @@ export const NotionPage: React.FC<types.PageProps> = ({
   if (isBlogPost) {
     if (config.utterancesGitHubRepo) {
       comments = (
-        <ReactUtterances
-          repo={config.utterancesGitHubRepo}
-          issueMap='issue-term'
-          issueTerm='title'
-          theme={isDarkMode ? 'photon-dark' : 'github-light'}
-        />
+        <Giscus
+        id="comments"
+        repo="hanmilLee/Notion-Next.js-blog-starter-kit"
+        repoId="R_kgDOJOLATQ"
+        category="comment"
+        categoryId="DIC_kwDOJOLATc4CVJ0H"
+        mapping="pathname"
+        term="Welcome to @giscus/react component!"
+        reactionsEnabled="1"
+        emitMetadata="0"
+        inputPosition="bottom"
+        theme={isDarkMode ? 'dark_tritanopia' : 'github-light'}
+        lang="ko"
+        loading="lazy"
+      />
+        // <ReactUtterances
+        //   repo={config.utterancesGitHubRepo}
+        //   issueMap='issue-term'
+        //   issueTerm='title'
+        //   theme={isDarkMode ? 'photon-dark' : 'github-light'}
+        // />
       )
       // } else if (config.cusdis) {
       //   if (!config.cusdis.appId) {

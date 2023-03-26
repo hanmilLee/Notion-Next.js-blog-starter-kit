@@ -17,7 +17,6 @@ export default siteConfig({
   // socialImageTitle: 'HM_dev',
   // socialImageSubtitle: 'Hello World! 👋',
 
-
   // social usernames (optional)
   // twitter: 'transitive_bs',
   github: 'hanmilLee',
@@ -28,7 +27,8 @@ export default siteConfig({
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
-  defaultPageIcon:'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F40aa26a4-f6eb-48ab-b565-42285e4ca6e9%2FIMG_0742_2.jpg?table=block&id=f6f85c1f-4880-434d-868f-7cd43bd08c33&spaceId=623e70e4-669c-4ea1-b8a9-ab61e0e56b03&width=250&userId=cc3b84ef-8151-41fa-bfd0-1b4fef12b8c3&cache=v2',
+  defaultPageIcon:
+    'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F40aa26a4-f6eb-48ab-b565-42285e4ca6e9%2FIMG_0742_2.jpg?table=block&id=f6f85c1f-4880-434d-868f-7cd43bd08c33&spaceId=623e70e4-669c-4ea1-b8a9-ab61e0e56b03&width=250&userId=cc3b84ef-8151-41fa-bfd0-1b4fef12b8c3&cache=v2',
   defaultPageCover: null,
   defaultPageCoverPosition: 0.5,
 
@@ -56,7 +56,7 @@ export default siteConfig({
   navigationLinks: [
     {
       title: 'About me',
-      pageId: 'a32a59aec23c41e08452757e94d96418'
+      pageId: 'a32a59aec23c41e08452757e94d96418',
     },
     // {
     //   title: 'Category',
@@ -66,14 +66,16 @@ export default siteConfig({
 
   // -------- custom configs (2skydev) -------------
 
-  // Utteranc.es comments via GitHub issue comments (optional)
-  utterancesGitHubRepo: 'hanmilLee/nextjs-notion-starter-kit',
- 
+  // // Utteranc.es comments via GitHub issue comments (optional)
+  // utterancesGitHubRepo: 'hanmilLee/nextjs-notion-starter-kit',
+
+  GiscusGitHubRepo: 'hanmilLee/nextjs-notion-starter-kit',
+
   // date-fns format string
   dateformat: 'yyyy년 MM월 dd일',
 
   // post page - hidden properties
-  hiddenPostProperties: [ '상태', '최하위 정렬'],
+  hiddenPostProperties: ['상태', '최하위 정렬'],
 
   // contentPosition (table of contents) text align
   contentPositionTextAlign: 'left',

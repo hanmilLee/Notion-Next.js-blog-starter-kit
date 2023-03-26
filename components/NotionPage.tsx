@@ -230,11 +230,11 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const hasCollectionView = Object.keys(recordMap.collection_query).length;
 
   if (isBlogPost) {
-    if (config.utterancesGitHubRepo) {
+    if (config.GiscusGitHubRepo) {
       comments = (
         <Giscus
           id="comments"
-          repo="hanmilLee/Notion-Next.js-blog-starter-kit"
+          repo={config.GiscusGitHubRepo}
           repoId="R_kgDOJOLATQ"
           category="comment"
           categoryId="DIC_kwDOJOLATc4CVJ0H"

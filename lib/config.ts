@@ -50,7 +50,7 @@ export const twitter: string | null = getSiteConfig('twitter', null);
 export const github: string | null = getSiteConfig('github', null);
 export const youtube: string | null = getSiteConfig('youtube', null);
 export const linkedin: string | null = getSiteConfig('linkedin', null);
-export const instagram: string | null = getSiteConfig('instagram', null)
+export const instagram: string | null = getSiteConfig('instagram', null);
 export const newsletter: string | null = getSiteConfig('newsletter', null);
 export const zhihu: string | null = getSiteConfig('zhihu', null);
 
@@ -60,10 +60,9 @@ export const defaultPageCover: string | null = getSiteConfig('defaultPageCover',
 export const defaultPageCoverPosition: number = getSiteConfig('defaultPageCoverPosition', 0.5);
 
 // Optional utteranc.es comments via GitHub issue comments
-export const utterancesGitHubRepo: string | null = getSiteConfig(
-  'utterancesGitHubRepo',
-  null
-)
+export const utterancesGitHubRepo: string | null = getSiteConfig('utterancesGitHubRepo', null);
+
+export const GiscusGitHubRepo: string | null = getSiteConfig('GiscusGitHubRepo', null);
 // Optional whether or not to enable support for LQIP preview images
 export const isPreviewImageSupportEnabled: boolean = getSiteConfig(
   'isPreviewImageSupportEnabled',

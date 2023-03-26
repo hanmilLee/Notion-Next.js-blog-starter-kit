@@ -13,7 +13,7 @@ export interface SiteConfig {
   twitter?: string;
   github?: string;
   linkedin?: string;
-  instagram?: string
+  instagram?: string;
 
   newsletter?: string;
   youtube?: string;
@@ -28,8 +28,8 @@ export interface SiteConfig {
   isRedisEnabled?: boolean;
   isSearchEnabled?: boolean;
 
-  utterancesGitHubRepo?: string
-
+  utterancesGitHubRepo?: string;
+  GiscusGitHubRepo?: string;
   includeNotionIdInUrls?: boolean;
   pageUrlOverrides?: types.PageUrlOverridesMap;
   pageUrlAdditions?: types.PageUrlOverridesMap;

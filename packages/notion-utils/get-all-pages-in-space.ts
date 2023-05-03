@@ -23,7 +23,7 @@ export async function getAllPagesInSpace(
   rootSpaceId: string | undefined,
   getPage: (pageId: string) => Promise<ExtendedRecordMap>,
   {
-    concurrency = 4,
+    concurrency = 6,
     traverseCollections = true,
     targetPageId = null,
   }: {

@@ -310,6 +310,10 @@ body {
     }
   }
 }
+
+/**
+ * ================ notion 페이지 - 기본 블럭 스타일 (본문 내용) ================
+ */
 .notion {
   // 제목1 ~ 제목3
   .notion {
@@ -327,10 +331,22 @@ body {
       }
     }
   }
+  .notion-simple-table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    td {
+      border-color: var(--fg-color-lighten);
+    }
+
+    tr:first-child td {
+      background-color: var(--fg-color-lighten);
+    }
+  }
 }
-/**
- * ================ notion 페이지 - 기본 블럭 스타일 (본문 내용) ================
- */
+
 /*
 .notion {
   // 제목1 ~ 제목3

@@ -310,10 +310,28 @@ body {
     }
   }
 }
+.notion {
+  // 제목1 ~ 제목3
+  .notion {
+    &-h1 {
+      font-size: 1.7rem;
 
+      &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 4rem;
+        background-color: var(--fg-color);
+        margin-top: 0.5rem;
+        border-radius: 5px;
+      }
+    }
+  }
+}
 /**
  * ================ notion 페이지 - 기본 블럭 스타일 (본문 내용) ================
  */
+/*
 .notion {
   // 제목1 ~ 제목3
   .notion {
@@ -516,6 +534,7 @@ body {
     }
   }
 }
+*/
 
 /**
  * ================ notion 페이지 - 커스텀 블럭 스타일 ================
